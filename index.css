@@ -1,0 +1,100 @@
+body{
+    background-color: darkslategrey;
+}
+.p{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+.ch{
+    height: 260px;
+    width: 260px;
+    margin: 10px;
+    background-color: chartreuse;
+}
+.c1:hover{
+    transform: translateX(15px);
+    background-color:red ;
+    color: white;
+}
+.c2:hover{
+    transform:translateX(-10px);
+    background-color:red; 
+    color:white;
+}
+.c3:hover{
+    transform:translateY(-10px);
+    background-color:red ;
+    color: white;
+}
+.c4:hover{
+    transform: translateY(10px);
+    background-color:red ;
+    color: white;
+}
+.c5:hover{
+    transform:scale(160%);
+    background-color:red;
+    color:white;
+}
+.c6:hover{
+    transform: scale(60%);
+    background-color:red;
+    color: white;
+}
+.c7:hover{
+    transform: background-color 0.5s ease-in-out;
+    border-radius: 50%;
+    background-color:red;
+    color: white;
+}
+.c8:hover{
+    transform: background-color 0.5s ease-in-out;
+    transform: translateX(-10px);
+    width: 300px;
+    background-color:red;
+    color: white;
+}
+.c9:hover{
+    transition: background-color 0.5s ease;
+    height:350px ;
+    background-color:red;
+    color: white;
+}
+.c10:hover{
+    transition:background-color 0.5s ease; 
+    transform:rotateZ(40deg);
+    background-color:red;
+    color:white;
+}
+@media screen (max-width:360px;) {
+    .p{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .ch{
+    height: 50px;
+    width:50px;
+}
+
+}
+@media screen (min-width:380px) and (max-width:750px;){
+    .p{
+        display:flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .ch{
+        width: 60px;
+        height: 60px;
+        align-items: center;
+    }
+}
